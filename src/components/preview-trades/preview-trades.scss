@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+.tradepage {
+    padding: 50px, 50px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -20px;
+    .title {
+     font-family: "Lato", sans-serif;
+      font-size: 28px;
+      margin-left: 80px;
+      margin-bottom: 25px;
+    }
+
+    .preview {
+      display: flex;
+      justify-content: space-evenly;
+      min-height: 50px;
+    }
+  }
+
+.tradeItem {
+    width: 200%;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    align-items: center;
+  
+    .img {
+      width: 95%;
+      height: 75%;
+      border-radius: 3px;
+      background-size: cover;
+      background-position: center;
+      margin-bottom: 5px;
+    }
+  
+    .tradeFooter {
+      width: 90%;
+      height: 5%;
+      display: flex;
+      justify-content: space-between;
+      font-size: 15px;
+  
+      .name {
+        font-weight: 300;
+        width: 100%;
+      }
+  
+      .price {
+        color:green;
+        width: 11%;
+      }
+    }
+  }
