@@ -1,6 +1,8 @@
 import React from 'react';
 import '../sass/mainmenu.scss';
 import MenuCard  from './menu-card';
+
+// Class component of the menu that is displayed on the homepage
 export class MainMenu extends React.Component {
 	constructor() {
 		super();

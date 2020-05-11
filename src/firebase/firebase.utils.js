@@ -1,7 +1,7 @@
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
-
+//  Firebase authentication with github, google and facebook
 const config = {
 
         apiKey: "AIzaSyBuDmPIOswhCFrwlH_KDLYPnS9fKC8lzRo",
@@ -23,10 +23,13 @@ export const firestore = firebase.firestore();
 
 const provider = new firebase.auth.GoogleAuthProvider();
 const providerFacebook = new firebase.auth.FacebookAuthProvider();
+const providerGithub = new firebase.auth.GithubAuthProvider();
+
 
 provider.setCustomParameters({prompt: 'select_account'});
 export const signInWithGoogle = () => auth.signInWithPopup(provider);
 export const signInWithFacebook = () => auth.signInWithPopup(providerFacebook);
+export const signInWithGithub = () => auth.signInWithPopup(providerGithub);
 
 export default firebase;
 

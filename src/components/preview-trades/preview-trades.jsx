@@ -1,6 +1,7 @@
 import React  from 'react';
 import "./preview-trades.scss";
 
+// Function that creates an individual item to be traded
 const TradeItem = (name, price, imageUrl) => (
     <div className= 'tradeItem'> <div className= 'img' style={
         {
@@ -15,9 +16,10 @@ const TradeItem = (name, price, imageUrl) => (
     
 )
 
+// Maps the title and items of the json file to a trade item 
 const PreviewTrades = ({title, items }) => (
     <div className='tradepage'>
-        <h1 className='title'>{title}</h1>
+        <h5 className='title'>{title}</h5>
     <div className='preview'> {items.filter((a, idx) => idx < 5).map(({id, name, imageUrl, price}) =>
      (<div key={id}>{TradeItem( name, price, imageUrl)}</div>))}
     
